@@ -1,0 +1,32 @@
+{
+  "name": "rhmap-deploys-service",
+  "version": "0.1.0",
+  "description": "a service that provides deploy information for a domain",
+  "main": "index.js",
+  "scripts": {
+    "start": "env NODE_PATH=. nodemon application.js | bunyan",
+    "debug": "env NODE_PATH=. node --debug-brk application.js | bunyan",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "~3.4.6",
+    "env-var": "~2.4.1",
+    "express": "~4.14.0",
+    "fh-bunyan": "~0.3.0",
+    "fh-fhc": "~2.16.3-493",
+    "fh-mbaas-api": "~5.14.2",
+    "lodash.has": "~4.5.2",
+    "mongo-dot-notation": "~1.0.6",
+    "ramda": "~0.22.1",
+    "request": "~2.79.0",
+    "rhmap-mongodb": "git+https://github.com/mikeyburkman/rhmap-mongodb",
+    "verror": "~1.9.0"
+  },
+  "devDependencies": {
+    "bunyan": "~1.8.5",
+    "eslint": "~3.12.2",
+    "nodemon": "~1.11.0"
+  }
+}
